@@ -53,12 +53,11 @@ class _FirstPageState extends State<FirstPage> {
           },
         ),            
         Text(
-        appState.getAppData('page2'),
+        appState.getAppData('page2') ?? 'null',
         style: TextStyle(
           fontSize: 24.0,
           ),
         ),
-
         ],
       ),
     );

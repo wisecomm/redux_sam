@@ -7,12 +7,12 @@ import './first_page.dart';
 import './second_page.dart';
 
 void main() => runApp(
-    // 이부분을 뒤로 보내면 에러 발생함 
-    ChangeNotifierProvider<AppState>(
-      builder: (context) => AppState(),
-      child: MyApp(),
-    ),
-  );
+  // 이부분을 뒤로 보내면 에러 발생함 
+  ChangeNotifierProvider<AppState>(
+    builder: (context) => AppState(),
+    child: MyApp(),
+  ),
+);
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
