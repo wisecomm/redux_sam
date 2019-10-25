@@ -24,6 +24,15 @@ https://flutter.dev/docs/development/data-and-backend/state-mgmt/options
 # 참조
   provider: ^2.0.1
 
+# main.dart
+void main() => runApp(
+  // 이부분을 뒤로 보내면 에러 발생함 
+  ChangeNotifierProvider<AppState>(
+    builder: (context) => AppState(),
+    child: MyApp(),
+  ),
+);
+
 # 유저 정보 사용
   UserInfo userInfo = new UserInfo();
   userInfo.id = 'testid';
